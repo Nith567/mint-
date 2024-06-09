@@ -1,6 +1,7 @@
 import { useAccount } from "wagmi";
 import { useWriteContracts } from "wagmi/experimental";
 import { useState } from "react";
+
 import { myNFTABI, myNFTAddress } from "@/ABIs/myNFT";
 import { ethers } from "ethers";
 
@@ -32,7 +33,7 @@ export function Transact() {
     
     // Encode the parameters using ethers.js
     const encodedData = ethers.utils.defaultAbiCoder.encode(types, values);
-    console.log(encodedData);//this is encodedBytes
+    console.log(encodedData);
   }
   return (
     <div>
@@ -47,7 +48,7 @@ export function Transact() {
             writeContracts({
               contracts: [
                 {
-                  address: '0xAF5A4F6F6640734d7D000321Bb27De40D4Ae91f6',
+                  address: myNFTAddress,
                   abi: myNFTABI,
                   functionName: "mint",
                   args: ["0xeb334f3fbd826ce99f1e74d7d074fbe351f4157a", 12, 1, ["0x8879318091671ba1274e751f8cdef76bb37eb3ed"],encodedBytes ]
@@ -58,7 +59,6 @@ export function Transact() {
         >
           Mint
         </button>
-  
       </div>
     </div>
   );
