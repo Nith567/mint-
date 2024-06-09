@@ -51,7 +51,7 @@ export function Transact() {
                   address: myNFTAddress,
                   abi: myNFTABI,
                   functionName: "mint",
-                  args: ["0xeb334f3fbd826ce99f1e74d7d074fbe351f4157a", 12, 1, ["0x8879318091671ba1274e751f8cdef76bb37eb3ed"],encodedBytes ]
+                  args: ["0xeb334f3fbd826ce99f1e74d7d074fbe351f4157a", 1, 1, ["0x8879318091671ba1274e751f8cdef76bb37eb3ed"],encodedBytes ]
                 }
               ],
             });
