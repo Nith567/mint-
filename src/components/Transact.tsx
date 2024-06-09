@@ -47,7 +47,7 @@ export function Transact() {
             writeContracts({
               contracts: [
                 {
-                  address: myNFTAddress,
+                  address: '0xAF5A4F6F6640734d7D000321Bb27De40D4Ae91f6',
                   abi: myNFTABI,
                   functionName: "mint",
                   args: ["0xeb334f3fbd826ce99f1e74d7d074fbe351f4157a", 12, 1, ["0x8879318091671ba1274e751f8cdef76bb37eb3ed"],encodedBytes ]

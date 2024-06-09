@@ -35,7 +35,7 @@ export const myNFTABI = [
 },
 ] as const;
 
-export const myNFTAddress = "0xeb334f3fbd826ce99f1e74d7d074fbe351f4157a";
+export const myNFTAddress = "0xAF5A4F6F6640734d7D000321Bb27De40D4Ae91f6";
 // export const myNFTABI = [
 //     {
 //       stateMutability: "nonpayable",
